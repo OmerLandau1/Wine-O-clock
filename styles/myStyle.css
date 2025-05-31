@@ -1,0 +1,731 @@
+﻿/*הגדרות משותפות לכל העמודים*/
+body {
+    direction: rtl;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+/* הטמעת פונט */
+
+@font-face {
+    font-family: 'Yehuda CLM';
+    src: url('fonts/yehudaclm-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*דפים לא פעילים */
+
+.notActive {
+    cursor: not-allowed;
+}
+
+/*תפריט ניווט רקע */
+#navigation {
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    /* תפריט ניווט הורדת קישוטים */
+
+
+    #navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        /* תפריט שורות */
+
+        #navigation ul li {
+            display: inline-block;
+            position: relative;
+            margin-left: 20px;
+        }
+
+            /* תפריט ניווט עיצוב טקסט */
+
+            #navigation ul li a {
+                color: #7E2A24;
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+                font-family: 'Yehuda CLM';
+            }
+
+/* תפריט ניווט הדגשת עמוד */
+
+.thispage > a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*  תתי תפריט */
+
+#navigation ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#navigation ul li:hover ul {
+    display: block;
+}
+
+/* פריטי תת תפריט */
+#navigation ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+    /* הקישורים עצמם */
+    #navigation ul li ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #7E2A24;
+        box-sizing: border-box;
+    }
+
+        /* הובר על הקישור */
+        #navigation ul li ul li a:hover {
+            background-color: antiquewhite;
+        }
+
+/*  רקע תמונה בפתיחה */
+
+.mainBackground {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+}
+
+#homebackground {
+    background-image: url("../images/homebackground.jpg");
+}
+
+/*  כותרת ראשית */
+
+.mainTitle {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 36pt;
+    color: white;
+    font-family: 'Secular One';
+}
+
+/*  כל מי שבתוך התפריט ניווט */
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*  לוגו אתר */
+
+.nav-logo {
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    height: 150px;
+}
+
+    /*  לוגו אתר מעבר עכבר */
+
+    .nav-logo:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+/* כל מה שנמצא בדף הראשי */
+
+.main {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F6F9FF;
+    color: #647458;
+}
+/*  פוטר */
+
+footer {
+    background-color: #333;
+    padding: 15px 0;
+    font-size: 12pt;
+    text-align: center;
+}
+
+    footer a {
+        color: white;
+        padding-right: 20px;
+        font-family: 'Yehuda CLM';
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: #647458;
+            font-weight:bold;
+        }
+
+
+
+/*הגדרות דף הבית*/
+
+/* כותרת שנייה */
+
+.secondTitle {
+    font-size: 28pt;
+    font-family: 'Secular One';
+}
+
+/*  טקסט דף  */
+
+.text p {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 30px;
+    margin-top: 20px;
+    font-size: 16pt;
+    line-height: 1.6;
+    font-family: 'Yehuda CLM';
+}
+
+/* שלושת הכפתורים */
+.buttons div {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #800020;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buttons a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Yehuda CLM';
+}
+
+/* מעבר עכבר על כפתורים */
+
+.buttons div:hover {
+    background-color: #a52a2a;
+}
+
+
+
+
+
+/*הגדרות יין אדום*/
+#redwinebackground {
+    background-image: url('../images/redwine.png');
+}
+
+.thirdTitle {
+    font-size: 16pt;
+    font-family: 'Secular One';
+}
+
+/* כל המלל מתחת */
+
+.textredwine {
+    margin-top: 15px;
+}
+
+    /*  המלל שמתחת */
+
+    .textredwine div {
+        max-width: 600px;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 14pt;
+        font-family: 'Yehuda CLM';
+        line-height: 1.4; 
+    }
+
+/* עיצוב לכל קופסא */
+
+.wine-list,
+.pairing-list,
+.reccom {
+    border: 2px solid #7E2A24;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+    /* עיצוב לקישור */
+
+    .reccom a {
+        color: #647458
+    }
+
+/* עיצוב להדגשות */
+
+strong {
+    font-family: 'Yehuda CLM', sans-serif;
+    font-weight: bold;
+}
+
+/* עיצוב לתמונה מטה */
+
+#bottompic {
+    background-image: url('../images/redwinefooter.png');
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+/*טקסט יין אדום*/
+
+.textredwine p {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 30px;
+    margin-top: 20px;
+    font-size: 16pt;
+    line-height: 1.6;
+    font-family: 'Yehuda CLM';
+}
+
+
+
+
+/*הגדרות יקבים*/
+
+/*רקע ייחודי לדף*/
+
+#backgroundnorth {
+    background-image: url('../images/backgroundnorth.png');
+}
+
+/*רקע ייחודי לדף*/
+
+#backgroundyehuda {
+    background-image: url('../images/yehudaWine.jpg');
+}
+
+/*הגדרות של עמוד יקבים*/
+
+.content-layout {
+    display: flex;
+    margin: 10px auto;
+}
+
+/*הגדרה של המפה -מיקום*/
+
+.map-container {
+    flex: 0 0 350px;
+    height: 500px;
+    background-color: #f6f9ff;
+    border-radius: 12px;
+    position: sticky;
+    top: 100px;
+    overflow: hidden;
+}
+
+/*עיצוב מפה*/
+
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/*כרטיסיות כללי-הכל*/
+
+.cards-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*כל כרטיסיה בנפרד*/
+
+.winery-card {
+    border: 2px solid #800020;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #647458;
+    padding: 30px;
+    margin: 30px;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/*כותרת ראשית כרטיסיה*/
+
+.secondTitlewinery {
+    font-size: 28pt;
+    font-family: 'Secular One';
+}
+
+/*פסקה כרטיסיה*/
+
+.winery-card p {
+    margin: 10px;
+    font-size: 16pt;
+    font-family: 'Yehuda CLM';
+}
+
+/*כותרת משנית לכרטיסיות*/
+
+.winery-card h3 {
+    text-align: center;
+    font-size: 16pt;
+    text-decoration: underline;
+    font-family: 'Yehuda CLM';
+    font-weight: bold;
+}
+
+/*כפתורים לכרטיסיות*/
+
+.wineButton {
+    display: block;
+    margin: 0px auto;
+    padding: 12px 24px;
+    background-color: #800020;
+    color: antiquewhite;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Yehuda CLM';
+    text-decoration: none;
+    width: fit-content;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+}
+
+    /*מעבר עכבר כפתורים כרטיסיות*/
+
+    .wineButton:hover {
+        background-color: #a0002e;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+
+
+
+/*אודות*/
+
+#backgroundabout {
+    background-image: url('../images/about.png');
+}
+
+/*הגדרות כלליות*/
+.about {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto 30px;
+    margin-top: 20px;
+    font-size: 16pt;
+    line-height: 1.6;
+}
+
+    /*פסקאות*/
+    .about>div {
+        margin-top: 15px;
+        font-family: 'Yehuda CLM';
+    }
+    /*קישורים*/
+    .about a {
+        font-family: 'Yehuda CLM';
+        color: #647458;
+    }
+/*עיצוב לתמונות שלנו*/
+.team-photos div {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px solid #800020;
+    display:inline-block;
+}
+
+#profile-omer {
+    background-image: url('../images/omer.jpeg')
+}
+
+#profile-amit {
+    background-image: url('../images/amit.jpeg')
+}
+
+#profile-maayan{
+    background-image: url('../images/maayan.jpeg')
+}
+
+.hit {
+    margin-top: 50px;
+    font-family: 'Yehuda CLM';
+}
+
+.hit>a {
+    font-weight: bold;
+    color: #647458;
+    font-size:16pt;
+}
+#hitLogo {
+    background-image: url('../images/hit.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+
+
+
+/*תפריט פירורי לחם*/
+
+.breadcrumbs {
+    padding: 20px;
+    text-align: right;
+}
+
+    /*הגדרות כלליות*/
+.breadcrumbs ul li {
+    display: inline-block;
+    color: #7E2A24;
+    font-family: 'Yehuda CLM';
+    font-weight:bold;
+}
+
+    .breadcrumbs ul li:after {
+        content: ">";
+    }
+
+    .breadcrumbs ul li:last-child:after {
+        content: "";
+    }
+
+
+    /*עיצוב קישורים*/
+.breadcrumbs a {
+    color: #7E2A24;
+    text-decoration: none;
+    font-weight:normal;
+}
+
+    .breadcrumbs a:hover {
+        text-decoration: underline;
+    }
+
+
+/*צור קשר*/
+
+#formbackground {
+    background-image: url("../images/Form.jpeg");
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    /* תוויות */
+    form label {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #7E2A24;
+        text-align: right;
+        font-family: 'Yehuda CLM';
+    }
+
+/* הגדרות לכל שדות האינפוט של טקטס, איימיל, טלפון, טקסטאריה (טקסט ארוך) */
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 12pt;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Yehuda CLM';
+}
+
+/* טקסט ארוך */
+form textarea {
+    resize: vertical;
+    font-family: 'Yehuda CLM';
+}
+
+/* טווח (range) */
+.range {
+    width: 100%;
+    accent-color: #7E2A24
+}
+
+/* צ'קבוקס */
+.checkbox {
+    margin-left: 10px;
+    font-family: 'Yehuda CLM';
+}
+
+/* כפתור שליחה */
+#send {
+    background-color: #647458;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12pt;
+    border-radius: 8px;
+    font-family: 'Yehuda CLM';
+}
+
+    /* שינוי צבע בהובר לכפתור שליחה */
+    #send:hover {
+        background-color: #a1b791;
+    }
+
+/* כותרות */
+form label div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Yehuda CLM';
+}
+
+    /* מספרים של הטווח */
+    form label div span {
+        font-size: 12pt;
+        color: #647458;
+        font-weight: bold;
+        font-family: 'Yehuda CLM';
+    }
+
+/* עיצוב רק ל-fieldset */
+#source {
+    border: 2px solid #7E2A24;
+    background-color: antiquewhite;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 20px 0; 
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7E2A24;
+}
+
+    /* כותרת ה-fieldset */
+    #source > legend {
+        font-weight: 700;
+        color: #7E2A24;
+        font-size: 14pt;
+        margin-bottom: 12px;
+        font-family: 'Yehuda CLM';
+    }
+
+    /* רק הלייבלים שבתוך ה-fieldset הזה */
+    #source > label {
+        display: block;
+        cursor: pointer;
+        font-size: 12pt;
+        margin-bottom: 10px;
+        user-select: none;
+        color: #7E2A24;
+    }
+
+/* עיצוב לאינפוט רדיו שבתך הפיילדטסט */
+.radio {
+    accent-color: #7E2A24;
+    margin-left: 8px;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+
+
+
+/*מפת אתר*/
+
+#mapSiteBackground {
+    background-image: url("../images/mapsite.jpeg");
+}
+
+
+/* טבלה כללית */
+.siteMap {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 8px 0; 
+}
+
+    /* כותרות טבלה */
+    .siteMap th {
+        background-color: #f9f4f4; 
+        font-weight: bold;
+        font-size: large;
+        color: #800020; 
+        padding: 20px;
+        font-family: 'Yehuda CLM';
+        border: none; 
+    }
+
+    /* תאים רגילים */
+    .siteMap td {
+        background-color: transparent; 
+        border: none; 
+        color: #647458; 
+        padding: 20px;
+        font-family: 'Yehuda CLM';
+        line-height: 1.2;
+    }
+    .siteMap th a {
+        color: #800020;
+    }
+
+    /* קישורים */
+    .siteMap a {
+        text-decoration: none;
+        color: #647458;
+        transition: color 0.2s ease;
+    }
+
+        .siteMap a:hover {
+            color: #800020;
+            text-decoration: underline;
+        }

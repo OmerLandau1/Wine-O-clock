@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>Red Wines</title>
+    <meta name="description" content="red wines" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Omer,Amit,Maayan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/favicon.png" />
+</head>
+
+<body>
+    <nav aria-label="תפריט ראשי" id="navigation">
+        <div class="nav-container">
+            <img src="images/logo.png" alt="לוגו" class="nav-logo" />
+            <ul id="textNav">
+                <li><a href="index.html">דף הבית</a></li>
+                <li class="thispage">
+                    <a href>סוגי יינות</a>
+                    <ul>
+                        <li class="thispage"><a href>אדום</a></li>
+                        <li><a href="#" class="notActive">רוזה</a></li>
+                        <li><a href="#" class="notActive">לבן</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href>יקבים</a>
+                    <ul>
+                        <li><a href="northwines.html">צפון</a></li>
+                        <li><a href="#" class="notActive">מרכז</a></li>
+                        <li><a href="#" class="notActive">דרום</a></li>
+                        <li><a href="yehudawines.html">הרי יהודה</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="notActive">מה מתאים לי</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="mainBackground" id="redwinebackground" alt="תמונה של כוס יין אדום">
+            <h1 class="mainTitle">העולם העשיר של היין האדום</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="#" class="notActive">סוגי יינות</a></li>
+                <li>אדום</li>
+            </ul>
+        </nav>
+        <h2 class="secondTitle">היין האדום מלווה ארוחות, שיחות ורגעים מיוחדים כבר אלפי שנים!</h2>
+        <div class="textredwine">
+            <h3 class="thirdTitle">מהו יין אדום?</h3>
+            <p>
+                יין אדום מופק מענבים כהים, ובעיקר מיני הענבים בעלי קליפה כהה, כמו קברנה סוביניון, מרלו, שיראז ועוד. תהליך הפקת היין כולל שימוש בקליפות הענבים, ולכן היין מקבל את צבעו העמוק ואת הטעמים המורכבים שלו. יין אדום יכול להיות קליל, חומצי ומרענן, או כבד, עשיר ומתובל.
+            </p>
+
+            <div class="wine-list">
+                <h3 class="thirdTitle">הזנים המרכזיים</h3>
+                <div><strong>קברנה סוביניון:</strong> עוצמתי, מלא גוף, טעמי פירות שחורים ותיבול</div>
+                <div><strong>מרלו:</strong> רך, פירותי ונעים לשתייה</div>
+                <div><strong>שיראז (סירה):</strong> מתובל, קטיפתי, עם נגיעות פלפל שחור</div>
+                <div><strong>פטיט סירה / פטיט ורדו:</strong> עוצמתי, צבע עמוק, טאנינים מודגשים</div>
+            </div>
+
+
+            <div class="pairing-list">
+                <h3 class="thirdTitle">שילובים קולינריים </h3>
+                <div> <strong>סטייקים</strong> (קברנה סוביניון עם אנטריקוט) </div>
+                <div><strong>קדירות בשר</strong> (שיראז עם תבשיל טלה) </div>
+                <div><strong>גבינות קשות</strong> (מרלו עם גבינת גאודה מיושנת)</div>
+                <div><strong>פסטות ראגו</strong> (פטיט ורדו עם פסטה בולונז)</div>
+            </div>
+
+            <div class="reccom">
+                <h3 class="thirdTitle">יקבים מומלצים לטעימת אדומים</h3>
+                <div><a href="northwines.html">רשימה מקוצרת של יקבים בצפון עם יינות אדומים בולטים</a></div>
+                <div>רוצים לדעת איך לטעום יין כמו מקצוענים? <a href="https://www.golanwines.co.il/%D7%98%D7%A2%D7%99%D7%9E%D7%AA-%D7%99%D7%99%D7%9F-%D7%90%D7%9E%D7%A0%D7%95%D7%AA-%D7%94%D7%98%D7%A2%D7%99%D7%9E%D7%94/" target="_blank">קישור כאן</a></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="bottompic" alt="תמונה של פקקי שעם"></div>
+
+    <footer id="footer">
+        <span>
+            <a href="contactUs.html">צור קשר</a>
+            <a href="about.html">אודות</a>
+            <a href="siteMap.html">מפת האתר</a>
+        </span>
+    </footer>
+
+</body>
+</html>
+</html>
