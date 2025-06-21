@@ -729,3 +729,50 @@ form label div {
             color: #800020;
             text-decoration: underline;
         }
+
+
+        /*מה מתאים לי?*/
+
+#suitsbackground {
+    background-image: url("../images/whatsuites.png");
+}
+
+/* קונטיינר התמונות */
+#wineImages {
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+
+}
+
+/* כל תמונת יין */
+.wine-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* מתאימה את התמונה במלואה בתוך המיכל */
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+/* מוסתרת כברירת מחדל */
+.hidden {
+    display: none;
+}
+
+/* תמונה שמוצגת לפי בחירה ברדיו */
+.active-image {
+    display: inline-block;
+    opacity: 1;
+}
+
+/* תמונה שמודגשת לפי בחירת צ'קבוקס */
+.highlighted-image {
+    opacity: 1;
+    outline: 2px solid #7E2A24;
+    outline-offset: 2px;
+}
