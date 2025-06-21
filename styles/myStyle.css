@@ -1,4 +1,6 @@
 ﻿/*הגדרות משותפות לכל העמודים*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 body {
     direction: rtl;
     margin: 0 auto;
@@ -10,7 +12,7 @@ body {
 
 @font-face {
     font-family: 'Yehuda CLM';
-    src: url('fonts/yehudaclm-light-webfont.woff') format('woff');
+    src: url('../fonts/yehudaclm-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
