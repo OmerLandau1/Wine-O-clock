@@ -761,20 +761,14 @@ form label div {
     border-radius: 8px;
 }
 
-/* מוסתרת כברירת מחדל */
-.hidden {
-    display: none;
-}
-
-/* תמונה שמוצגת לפי בחירה ברדיו */
-.active-image {
+.wine-box {
     display: inline-block;
-    opacity: 1;
+    text-align: center;
 }
 
-/* תמונה שמודגשת לפי בחירת צ'קבוקס */
-.highlighted-image {
-    opacity: 1;
-    outline: 2px solid #7E2A24;
-    outline-offset: 2px;
+.wine-label {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #647458;
+    font-family: 'Yehuda CLM';
 }
